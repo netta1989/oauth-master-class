@@ -2,7 +2,21 @@
   <head>
     <script type="text/javascript" src="token.js"></script>
     <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-token-with-polyfills-latest.js"></script>
-    <div class="name"> Токен </div>
+     <meta charset="utf-8" />
+    <title>Oauth</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div class="auth" id="auth">
+      <div class="name">Вы не авторизованы :( </div>
+    </div>
+    <div class="buttons">
+      <button id="suggest">Саджест</button>
+      <button id="button">Кнопка</button>
+    </div>
+    <div id="buttonContainer" class="buttonsContainer"></div>
   </head>
   <body></body>
 </html>
