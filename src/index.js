@@ -19,7 +19,7 @@ window.onload = () => {
   document.getElementById("suggest").onclick = () => {
     YaAuthSuggest.init(
       {
-        client_id: "cdc84ba8cb97478a9519f7f2aadee334",
+        client_id: "2d70d44d2af244559b001721010d73bc",
         response_type: "token",
         redirect_uri: "https://oauth-master-classvchgfc-jg.vercel.app/token.html",
       },
@@ -38,7 +38,7 @@ window.onload = () => {
   document.getElementById("button").onclick = () => {
     window.YaAuthSuggest.init(
       {
-        client_id: "cdc84ba8cb97478a9519f7f2aadee334",
+        client_id: "2d70d44d2af244559b001721010d73bc",
         response_type: "token",
         redirect_uri: "https://oauth-master-classvchgfc-jg.vercel.app/token.html",
       },
