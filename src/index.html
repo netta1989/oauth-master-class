@@ -1,27 +1,21 @@
-<!doctype html>
-<html lang="ru">
-
-<head>
-   <meta charSet="utf-8" />
-   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover'>
-   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-   <style>
-      html,
-      body {
-         background: #eee;
-      }
-   </style>
-   <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-token-with-polyfills-latest.js"></script>
-</head>
-
-<body>
-   <script>
-      window.onload = function() {
-         window.YaSendSuggestToken("https://oauth-master-class-one.vercel.app/token.html", {
-            "kek": true
-         });
-      };
-   </script>
-</body>
-
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Oauth</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="module" src="index.js"></script>
+    <script src="https://yastatic.net/s3/passport-static/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+  </head>
+  <body>
+    <div class="auth" id="auth">
+      <div class="name">Вы не авторизованы  😔(</div>
+    </div>
+    <div class="buttons">
+      <button id="suggest">Саджест</button>
+      <button id="button">Кнопка</button>
+      <button onclick="document.location='https://oauth.yandex.ru/authorize?response_type=code&client_id=651c02ad139a4880aa3e8b9baa11142e'">GET-code</button>
+    </div>
+    <div id="buttonContainer" class="buttonsContainer"></div>
+  </body>
 </html>
