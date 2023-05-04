@@ -18,11 +18,11 @@
    <script>
    window.onload = function() {
       window.YaAuthSuggest.init({
-               client_id: 'c46f0c53093440c39f12eff95a9f2f93',
+               client_id: 'cdc84ba8cb97478a9519f7f2aadee334',
                   response_type: 'token',
-                  redirect_uri: 'https://examplesite.com/suggest/token'
+                  redirect_uri: 'https://oauth-master-class-one.vercel.app/token.html'
                },
-               'https://examplesite.com', {
+               'https://oauth-master-class-one.vercel.app', {
                   view: 'button',
                   parentId: 'container',
                   buttonView: 'main',
